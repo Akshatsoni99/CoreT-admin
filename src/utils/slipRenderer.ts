@@ -367,5 +367,5 @@ export async function generateCompletedSlip(params: CompletedSlipParams): Promis
     await renderWithdrawalSlip(ctx, canvas.width, canvas.height, params.data, sigImg, params.verificationId);
   }
 
-  return canvas.toDataURL('image/png', 0.95);
+  return canvas.toDataURL('image/jpeg', 0.85);
 }
